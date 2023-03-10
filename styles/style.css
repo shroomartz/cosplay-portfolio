@@ -16,6 +16,11 @@ strong {
     margin-right: 4px;
 }
 
+a:hover, a:focus {
+    color: var(--bubblegum);
+    transition: ease-in 0.15s;
+}
+
 nav, footer {
     background-color: rgba(101, 80, 160, 0.15);
 }
@@ -35,24 +40,46 @@ p {
     font-size: 1.5rem;
 }
 
-.navbar {
-    display: flex;
-}
+/* .navbar {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 0;
+    padding: 0;
+} */
 
 .navbar-item {
+    font-family: 'Yipes', 'Mitogen Display', sans-serif;
     font-size: 2rem;
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-item a {
+    font-family: 'Yipes', 'Mitogen Display', sans-serif;
+    font-size: 2rem;
+    list-style: none;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .branding-name {
     font-family: 'Mitogen Display', sans-serif;
     font-size: 2.75rem;
-    margin-right: 4rem;
+    margin-left: 1rem;
+    margin-right: auto;
 }
 
 .footer-item {
     font-family: "Yipes", "Mitogen Display", sans-serif;
     font-size: 2.25rem;
+    margin-right: 2rem;
 }
 
 li.text-ul-item:not(:last-child) {

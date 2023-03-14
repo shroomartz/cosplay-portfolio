@@ -1,5 +1,6 @@
 @import "fonts.css";
 @import "colors.css";
+@import "cosplays.css";
 
 * {
     font-family: "Beaufort", "DM Sans", sans-serif;
@@ -8,6 +9,7 @@
 
 body {
     background-color: var(--dark-eggplant);
+    position: relative;
 }
 
 strong {
@@ -40,46 +42,49 @@ p {
     font-size: 1.5rem;
 }
 
-/* .navbar {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    margin: 0;
-    padding: 0;
-} */
-
-.navbar-item {
-    font-family: 'Yipes', 'Mitogen Display', sans-serif;
-    font-size: 2rem;
-    list-style: none;
+.navbar {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-end;
     align-items: center;
 }
 
-.navbar-item a {
+#branding-logo {
+    width: 10rem;
+    margin-left: 1rem;
+    margin-right: auto;
+}
+
+.navbar-item, .navbar-item a {
     font-family: 'Yipes', 'Mitogen Display', sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     list-style: none;
+    margin-right: 2rem;
 }
 
 footer {
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
     align-items: center;
 }
 
 .branding-name {
     font-family: 'Mitogen Display', sans-serif;
-    font-size: 2.75rem;
+    font-size: 2.5rem;
     margin-left: 1rem;
     margin-right: auto;
 }
 
+.fa-instagram {
+    margin-right: 10px;
+    font-size: 2.5rem;
+}
+
 .footer-item {
     font-family: "Yipes", "Mitogen Display", sans-serif;
-    font-size: 2.25rem;
-    margin-right: 2rem;
+    font-size: 3rem;
+    margin-right: 3rem;
 }
 
 li.text-ul-item:not(:last-child) {

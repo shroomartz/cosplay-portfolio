@@ -15,18 +15,33 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
- 
+
 .cosplay-page-link {
-    display: none;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    background-color: var(--bubblegum-hover);
+    height: 25rem;
+    width: 25rem;
+    top: 2.5rem;
 }
 
 .cosplay-photo {
+    width: 25rem;
     height: 25rem;
     margin-top: 2.5rem;
     margin-bottom: 0.5rem;
+    object-fit: cover;
 }
 
-.cosplay-photo:hover {
-    background-color: var(--bubblegum);
+.cosplay-fandom {
+    margin-top: 0rem;
+}
+
+img.cosplay-photo:hover {
+    color: var(--bubblegum);
 }

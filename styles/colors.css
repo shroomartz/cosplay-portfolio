@@ -2,6 +2,7 @@
     /* Colors */
     --offwhite: #f5f5f5;
     --bubblegum: #fd4779;
+    --bubblegum-hover: rgb(253, 71, 121, 0.8);
     --neonpurple: #9c21c3;
     --fuschia: #a82256;
     --burgundy: #a8256d;
@@ -9,4 +10,5 @@
     --lilac: #a273c0;
     --daphne-purple: #6550a0;
     --dark-eggplant: #0d0022;
+    --nav-background: rgba(101, 80, 160, 0.15);
 }

@@ -24,7 +24,7 @@ a:hover, a:focus {
 }
 
 nav, footer {
-    background-color: rgba(101, 80, 160, 0.15);
+    background-color: var(--nav-background);
 }
 
 h1 {
@@ -53,6 +53,7 @@ p {
     width: 10rem;
     margin-left: 1rem;
     margin-right: auto;
+    z-index: 5;
 }
 
 .navbar-item, .navbar-item a {

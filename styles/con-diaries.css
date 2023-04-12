@@ -1,0 +1,56 @@
+.punchline {
+    display: flex;
+    justify-content: center;
+}
+
+.convention-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin: 0 5rem 0;
+}
+
+.convention-rectangle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.convention-page-link {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    text-decoration: none;
+    color: transparent;
+    background-color: transparent;
+    height: 20rem;
+    width: 40rem;
+    top: 2.5rem;
+
+    @media(max-width:) {
+        
+    }
+}
+
+.convention-page-link:hover {
+    color: var(--offwhite);
+    background-color: var(--bubblegum-hover);
+    transition: all 0.5s;
+
+}
+
+.convention-photo {
+    width: 40rem;
+    height: 20rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
+    object-fit: cover;
+}
+
+.convention-location {
+    margin-top: 0rem;
+}

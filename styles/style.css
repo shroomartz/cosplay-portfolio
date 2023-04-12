@@ -1,6 +1,7 @@
 @import "fonts.css";
 @import "colors.css";
 @import "cosplays.css";
+@import "con-diaries.css";
 
 * {
     font-family: "Beaufort", "DM Sans", sans-serif;
@@ -58,7 +59,7 @@ p {
 
 .navbar-item, .navbar-item a {
     font-family: 'Yipes', 'Mitogen Display', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     list-style: none;
     margin-right: 2rem;
 }
@@ -68,6 +69,7 @@ footer {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    margin-top: 1.5rem;
 }
 
 .branding-name {

@@ -30,13 +30,14 @@
     height: 25rem;
     width: 25rem;
     top: 2.5rem;
+    border-radius: 0.75rem;
 
     @media(max-width:) {
         
     }
 }
 
-.cosplay-page-link:hover {
+.cosplay-page-link:hover, .cosplay-page-link:focus {
     color: var(--offwhite);
     background-color: var(--bubblegum-hover);
     transition: all 0.5s;
@@ -49,6 +50,7 @@
     margin-top: 2.5rem;
     margin-bottom: 0.5rem;
     object-fit: cover;
+    border-radius: 0.75rem;
 }
 
 .cosplay-fandom {

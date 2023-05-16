@@ -1,0 +1,40 @@
+.cosplay-feature-name {
+  padding: 0;
+}
+
+.cosplay-feature-fandom {
+  font-weight: 100;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.feature-photo-container {
+  position: relative;
+}
+
+.cosplay-feature-photo {
+  width: 20rem;
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.75rem;
+  margin-left: 15rem;
+  margin-top: 2.5rem;
+  filter: drop-shadow(0 0 0.75rem var(--periwinkle));
+  z-index: 2;
+}
+
+.cosplay-feature-wallpaper {
+  width: 100rem;
+  height: 25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right top;
+     object-position: right top;
+  margin-right: 5rem;
+  float: right;
+  border-radius: 2.25rem;
+  filter: drop-shadow(0 0 0.75rem var(--periwinkle));
+  z-index: 1;
+  opacity: 0.4;
+}/*# sourceMappingURL=cosplay-feature-page.css.map */

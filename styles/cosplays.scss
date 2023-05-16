@@ -1,0 +1,58 @@
+.punchline {
+    display: flex;
+    justify-content: center;
+}
+
+.cosplay-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin: 0 5rem 0;
+}
+
+.feature-square {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.cosplay-page-link {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    text-decoration: none;
+    color: transparent;
+    background-color: transparent;
+    height: 25rem;
+    width: 25rem;
+    top: 2.5rem;
+    border-radius: 0.75rem;
+
+    @media(max-width:) {
+        
+    }
+}
+
+.cosplay-page-link:hover, .cosplay-page-link:focus {
+    color: var(--offwhite);
+    background-color: var(--bubblegum-hover);
+    transition: all 0.5s;
+
+}
+
+.cosplay-photo {
+    width: 25rem;
+    height: 25rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
+    object-fit: cover;
+    border-radius: 0.75rem;
+}
+
+.cosplay-fandom {
+    margin-top: 0rem;
+}

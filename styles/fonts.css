@@ -1,0 +1,22 @@
+/* Fonts References for Site */
+@font-face {
+    font-family: "Mitogen Display";
+    src: url(Mitogen Display.ttf);
+
+    font-family: "Yipes";
+    src: url(Yipes.ttf);
+
+    font-family: "Beaufort"; 
+    src: url("//db.onlinewebfonts.com/t/2c37f3699d9728b566e9bdc5b11e5180.eot"); src: url("//db.onlinewebfonts.com/t/2c37f3699d9728b566e9bdc5b11e5180.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/2c37f3699d9728b566e9bdc5b11e5180.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/2c37f3699d9728b566e9bdc5b11e5180.woff") format("woff"), url("//db.onlinewebfonts.com/t/2c37f3699d9728b566e9bdc5b11e5180.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/2c37f3699d9728b566e9bdc5b11e5180.svg#BeaufortW01-Regular") format("svg");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Beaufort"; 
+    src: url("//db.onlinewebfonts.com/t/fe90d2b331edb90ed36369d0c270d5b6.eot"); src: url("//db.onlinewebfonts.com/t/fe90d2b331edb90ed36369d0c270d5b6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/fe90d2b331edb90ed36369d0c270d5b6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/fe90d2b331edb90ed36369d0c270d5b6.woff") format("woff"), url("//db.onlinewebfonts.com/t/fe90d2b331edb90ed36369d0c270d5b6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/fe90d2b331edb90ed36369d0c270d5b6.svg#BeaufortW01-Bold") format("svg");
+    font-weight: 700;
+}
+
+/* DM Sans */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+/* font-family: 'DM Sans', sans-serif; */

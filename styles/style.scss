@@ -1,0 +1,95 @@
+@import "fonts.css";
+@import "colors.scss";
+@import "cosplays.scss";
+@import "con-diaries.scss";
+@import "in-the-media.scss";
+
+* {
+    font-family: "Beaufort", "DM Sans", "Gill Sans", sans-serif;
+    color: var(--offwhite);
+}
+
+body {
+    background-color: var(--dark-eggplant);
+    position: relative;
+}
+
+strong {
+    font-weight: 700;
+    margin-right: 4px;
+}
+
+a:hover, a:focus {
+    color: var(--bubblegum);
+    transition: ease-in 0.15s;
+}
+
+nav, footer {
+    background-color: var(--nav-background);
+}
+
+h1 {
+    font-family: "Yipes", "Mitogen Display", sans-serif;
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Mitogen Display", "DM Sans", sans-serif;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#branding-logo {
+    width: 10rem;
+    margin-left: 1rem;
+    margin-right: auto;
+    z-index: 5;
+}
+
+.navbar-item, .navbar-item a {
+    font-family: 'Yipes', 'Mitogen Display', sans-serif;
+    font-size: 2.25rem;
+    list-style: none;
+    margin-right: 2rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.branding-name {
+    font-family: 'Mitogen Display', sans-serif;
+    font-size: 2.5rem;
+    margin-left: 1rem;
+    margin-right: auto;
+}
+
+.fa-instagram {
+    margin-right: 10px;
+    font-size: 2.5rem;
+}
+
+.footer-item {
+    font-family: "Yipes", "Mitogen Display", sans-serif;
+    font-size: 3rem;
+    margin-right: 3rem;
+}
+
+li.text-ul-item:not(:last-child) {
+    margin-bottom: 8px;
+}

@@ -1,10 +1,10 @@
 /* Fonts References for Site */
 @font-face {
     font-family: "Mitogen Display";
-    src:url(Mitogen Display.ttf);
+    src: url(Mitogen Display.ttf);
 
     font-family: "Yipes";
-    src:url(Yipes.ttf);
+    src: url(Yipes.ttf);
 
     font-family: "Beaufort"; 
     src: url("//db.onlinewebfonts.com/t/2c37f3699d9728b566e9bdc5b11e5180.eot"); src: url("//db.onlinewebfonts.com/t/2c37f3699d9728b566e9bdc5b11e5180.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/2c37f3699d9728b566e9bdc5b11e5180.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/2c37f3699d9728b566e9bdc5b11e5180.woff") format("woff"), url("//db.onlinewebfonts.com/t/2c37f3699d9728b566e9bdc5b11e5180.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/2c37f3699d9728b566e9bdc5b11e5180.svg#BeaufortW01-Regular") format("svg");

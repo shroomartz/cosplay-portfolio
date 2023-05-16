@@ -1,0 +1,20 @@
+.cosplay-feature-name {
+    padding: 0;
+}
+
+.cosplay-feature-fandom {
+    font-weight: 100;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.cosplay-feature-photo {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    margin-left: 15rem;
+    margin-top: 2.5rem;
+    filter: drop-shadow(0 0 0.75rem var(--periwinkle));
+    z-index: 2;
+}

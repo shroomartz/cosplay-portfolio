@@ -1,3 +1,18 @@
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: -0.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.content {
+  margin-left: 10rem;
+  position: relative;
+  top: 5rem;
+}
+
 .cosplay-feature-name {
   padding: 0;
 }
@@ -5,6 +20,11 @@
 .cosplay-feature-fandom {
   font-weight: 100;
   font-size: 2rem;
+  text-align: center;
+  margin-top: -1rem;
+}
+
+.cosplay-feature-punchline {
   text-align: center;
 }
 
@@ -18,10 +38,11 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 0.75rem;
-  margin-left: 15rem;
+  margin-left: 7.5rem;
   margin-top: 2.5rem;
   filter: drop-shadow(0 0 0.75rem var(--periwinkle));
-  z-index: 2;
+  position: absolute;
+  top: 4rem;
 }
 
 .cosplay-feature-wallpaper {
@@ -35,6 +56,6 @@
   float: right;
   border-radius: 2.25rem;
   filter: drop-shadow(0 0 0.75rem var(--periwinkle));
-  z-index: 1;
-  opacity: 0.4;
+  opacity: 0.5;
+  position: relative;
 }/*# sourceMappingURL=cosplay-feature-page.css.map */

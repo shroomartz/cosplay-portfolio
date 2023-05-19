@@ -3,6 +3,7 @@
 @import "cosplays.scss";
 @import "con-diaries.scss";
 @import "in-the-media.scss";
+@import "cosplay-feature-page.scss";
 
 * {
     font-family: "Beaufort", "DM Sans", "Gill Sans", sans-serif;
@@ -26,6 +27,7 @@ a:hover, a:focus {
 
 nav, footer {
     background-color: var(--nav-background);
+    position: fixed;
 }
 
 h1 {

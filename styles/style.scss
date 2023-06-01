@@ -15,6 +15,10 @@ body {
     position: relative;
 }
 
+section {
+    margin-bottom: 6rem;
+}
+
 strong {
     font-weight: 700;
     margin-right: 4px;
@@ -27,7 +31,14 @@ a:hover, a:focus {
 
 nav, footer {
     background-color: var(--nav-background);
-    position: fixed;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1.5rem;
 }
 
 h1 {
@@ -64,14 +75,6 @@ p {
     font-size: 2.25rem;
     list-style: none;
     margin-right: 2rem;
-}
-
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    margin-top: 1.5rem;
 }
 
 .branding-name {

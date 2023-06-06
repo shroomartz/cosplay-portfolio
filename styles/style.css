@@ -67,7 +67,11 @@
 }
 
 .cosplay-fandom {
-  margin-top: 0rem;
+  padding-top: 0.5rem;
+}
+
+.cosplay-name {
+  margin-bottom: -0.5rem;
 }
 
 .punchline {

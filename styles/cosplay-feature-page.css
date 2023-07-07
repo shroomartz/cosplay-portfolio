@@ -58,4 +58,25 @@ h3 {
   filter: drop-shadow(0 0 0.75rem var(--periwinkle));
   opacity: 0.5;
   position: relative;
-}/*# sourceMappingURL=cosplay-feature-page.css.map */
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.photo-gallery img {
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+  transition: all ease-out 0.2s;
+}
+
+.photo-gallery img:hover {
+  width: 30rem;
+  height: 30rem;
+  object-fit: cover;
+  transition: all ease-in 0.2s;
+}
+
+/*# sourceMappingURL=cosplay-feature-page.css.map */

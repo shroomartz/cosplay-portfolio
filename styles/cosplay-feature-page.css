@@ -62,21 +62,22 @@ h3 {
 
 .photo-gallery {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .photo-gallery img {
-  width: 15rem;
-  height: 15rem;
+  width: 25rem;
+  height: 25rem;
+  padding-bottom: 2.5rem;
   object-fit: cover;
   transition: all ease-out 0.2s;
 }
 
-.photo-gallery img:hover {
-  width: 30rem;
-  height: 30rem;
+/* .photo-gallery img:hover {
+  width: 25rem;
+  height: 25rem;
   object-fit: cover;
   transition: all ease-in 0.2s;
-}
+} */
 
 /*# sourceMappingURL=cosplay-feature-page.css.map */

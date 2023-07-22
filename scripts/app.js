@@ -1,1 +1,3 @@
-console.log("You can see me");
+const image = document.getElementsByTagName("img");
+
+image.ondragstart = function() { return false; };

@@ -1,6 +1,4 @@
 @import "fonts.css";
-@import "homepage.css";
-
 :root {
   /* Colors */
   --offwhite: #f5f5f5;
@@ -15,32 +13,6 @@
   --dark-eggplant: #0d0022;
   --nav-background: rgba(101, 80, 160, 0.15);
   --periwinkle: #839bf2;
-}
-
-.homepage-gallery {
-  display: grid;
-  place-items: center;
-  grid-template-columns: repeat(6, 1fr);
-
-  @media(max-width:1100px) {
-      grid-template-columns: repeat(3, 1fr);
-  }
-} 
-
-.homepage-gallery img {
-  width: 20rem;
-  height: 30rem;
-  object-fit: cover;
-
-  @media(max-width: 1075px) {
-      width: 16rem;
-      height: 24rem;
-  }
-
-  @media(max-width: 650px) {
-      width: 8rem;
-      height: 12rem;
-  }
 }
 
 .punchline {
@@ -94,104 +66,6 @@
   border-radius: 0.75rem;
 }
 
-.cosplay-fandom {
-  padding-top: 0.5rem;
-}
-
-.cosplay-name {
-  margin-bottom: -0.5rem;
-}
-
-.punchline {
-  display: flex;
-  justify-content: center;
-}
-
-.body-text {
-  font-size: 1.5rem;
-  text-align: justify;
-}
-
-.upcoming-events {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.upcoming-events h2 {
-  font-size: 3rem;
-}
-
-.upcoming-events h3 {
-  font-size: 2rem;
-}
-
-.upcoming-events ul {
-  list-style: none;
-  font-size: 1.5rem;
-  margin-top: 0;
-}
-
-.convention-features {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
-  margin: 0 5rem 0;
-}
-
-.convention-rectangle {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.convention-page-link {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  text-decoration: none;
-  color: transparent;
-  background-color: transparent;
-  height: 20rem;
-  width: 40rem;
-  top: 2.5rem;
-  border-radius: 1.5rem;
-}
-
-.convention-page-link:hover, .convention-page-link:focus {
-  color: var(--offwhite);
-  background-color: var(--bubblegum-hover);
-  transition: all 0.5s;
-}
-
-.convention-photo {
-  width: 40rem;
-  height: 20rem;
-  margin-top: 2.5rem;
-  margin-bottom: 0.5rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 1.5rem;
-}
-
-.convention-location {
-  margin-top: 0rem;
-}
-
-.media-feature-list {
-  list-style: square;
-  font-size: 1.25rem;
-}
-
-.media-feature {
-  margin-bottom: 0.625rem;
-}
-
 h2 {
   font-size: 2.5rem;
   margin-bottom: -0.5rem;
@@ -230,7 +104,7 @@ h3 {
   width: 20rem;
   height: 20rem;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 0.75rem;
   margin-left: 7.5rem;
   margin-top: 2.5rem;
@@ -243,9 +117,9 @@ h3 {
   width: 100rem;
   height: 25rem;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: right top;
-     object-position: right top;
+  object-position: right top;
   margin-right: 5rem;
   float: right;
   border-radius: 2.25rem;
@@ -253,6 +127,29 @@ h3 {
   opacity: 0.5;
   position: relative;
 }
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.photo-gallery img {
+  width: 20rem;
+  height: 20rem;
+  padding-right: 0.5rem;
+  padding-bottom: 1.25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all ease-out 0.2s;
+  pointer-events: none;
+}
+
+/* .photo-gallery img:hover {
+  width: 25rem;
+  height: 25rem;
+  object-fit: cover;
+  transition: all ease-in 0.2s;
+} */
 
 * {
   font-family: "Beaufort", "DM Sans", "Gill Sans", sans-serif;
@@ -287,7 +184,7 @@ footer {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  margin-top: auto;
+  margin-top: 1.5rem;
 }
 
 h1 {
@@ -305,6 +202,82 @@ p {
   font-size: 1.5rem;
 }
 
+.homepage-gallery {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(6, 1fr);
+}
+@media (max-width: 1100px) {
+  .homepage-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.homepage-gallery img {
+  width: 20rem;
+  height: 30rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 1100px) {
+  .homepage-gallery img {
+    width: 16rem;
+    height: 24rem;
+  }
+}
+@media (max-width: 650px) {
+  .homepage-gallery img {
+    width: 8rem;
+    height: 12rem;
+  }
+}
+
+.upcoming-events {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.upcoming-events h2 {
+  font-size: 3rem;
+}
+@media (max-width: 1100px) {
+  .upcoming-events h2 {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 650px) {
+  .upcoming-events h2 {
+    font-size: 1.2rem;
+  }
+}
+
+.upcoming-events h3 {
+  font-size: 2rem;
+}
+@media (max-width: 1100px) {
+  .upcoming-events h3 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 650px) {
+  .upcoming-events h3 {
+    font-size: 0.8rem;
+  }
+}
+
+.upcoming-events ul {
+  list-style: none;
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.punchline {
+  display: flex;
+  justify-content: center;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -318,6 +291,16 @@ p {
   margin-right: auto;
   z-index: 5;
   border-radius: 50%;
+}
+@media (max-width: 1100px) {
+  #branding-logo {
+    width: 7.5rem;
+  }
+}
+@media (max-width: 650px) {
+  #branding-logo {
+    width: 5rem;
+  }
 }
 
 .navbar-item, .navbar-item a {
@@ -343,6 +326,21 @@ p {
   font-family: "Yipes", "Mitogen Display", sans-serif;
   font-size: 3rem;
   margin-right: 3rem;
+}
+
+li.text-ul-item {
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+@media (max-width: 1100px) {
+  li.text-ul-item {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 650px) {
+  li.text-ul-item {
+    font-size: 1rem;
+  }
 }
 
 li.text-ul-item:not(:last-child) {

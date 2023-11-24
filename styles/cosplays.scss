@@ -9,14 +9,18 @@
     grid-gap: 2rem;
     margin: 0 5rem 0;
 
-    @media(max-width: 1100px) {
+    @media (max-width: 1100px) {
         grid-gap: 1.2rem;
         margin: 0 3rem 0;
         grid-template-columns: repeat(2, 1fr);
     }
-    @media(max-width: 650px) {
+    @media (max-width: 650px) {
         grid-gap: 0.8rem;
         margin: 0 2rem 0;
+    }
+    @media (max-width: 340px) {
+        grid-gap: 0.4rem;
+        margin: 0 1rem 0;
     }
 }
 
@@ -52,6 +56,11 @@
         width: 7.5rem;
         font-size: 1rem;
     }
+    @media (max-width: 340px) {
+        height: 5rem;
+        width: 5rem;
+        font-size: 0.7rem;
+    }
 }
 
 .cosplay-page-link:hover, .cosplay-page-link:focus {
@@ -77,6 +86,10 @@
         height: 7.5rem;
         width: 7.5rem;
     }
+    @media (max-width: 340px) {
+        height: 5rem;
+        width: 5rem;
+    }
 }
 
 .cosplay-name {
@@ -95,9 +108,8 @@
 }
 
 .cosplay-fandom {
-
     @media (max-width: 1100px) {
-        font-size: 0.75rem;
+        font-size: 1rem;
     }
     @media (max-width: 650px) {
         font-size: 0.5rem;

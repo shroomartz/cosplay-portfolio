@@ -39,6 +39,12 @@
     margin: 0 2rem 0;
   }
 }
+@media (max-width: 340px) {
+  .cosplay-features {
+    grid-gap: 0.4rem;
+    margin: 0 1rem 0;
+  }
+}
 
 .feature-square {
   display: flex;
@@ -76,6 +82,13 @@
     font-size: 1rem;
   }
 }
+@media (max-width: 340px) {
+  .cosplay-page-link {
+    height: 5rem;
+    width: 5rem;
+    font-size: 0.7rem;
+  }
+}
 
 .cosplay-page-link:hover, .cosplay-page-link:focus {
   color: var(--offwhite);
@@ -104,6 +117,12 @@
     width: 7.5rem;
   }
 }
+@media (max-width: 340px) {
+  .cosplay-photo {
+    height: 5rem;
+    width: 5rem;
+  }
+}
 
 .cosplay-name {
   height: 3rem;
@@ -125,7 +144,7 @@
 
 @media (max-width: 1100px) {
   .cosplay-fandom {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 }
 @media (max-width: 650px) {
@@ -294,7 +313,7 @@ footer {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  margin-top: 1.5rem;
+  margin-top: auto;
 }
 
 h1 {
@@ -302,14 +321,40 @@ h1 {
   font-size: 3rem;
   text-align: center;
 }
+@media (max-width: 650px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
 
 h2 {
   font-family: "Mitogen Display", "DM Sans", sans-serif;
   font-size: 2rem;
 }
+@media (max-width: 1100px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 650px) {
+  h2 {
+    font-size: 1.25rem;
+  }
+}
 
 p {
   font-size: 1.5rem;
+}
+@media (max-width: 1100px) {
+  p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 650px) {
+  p {
+    font-size: 0.6rem;
+    line-height: 1.1rem;
+  }
 }
 
 .homepage-gallery {
@@ -320,6 +365,11 @@ p {
 @media (max-width: 1100px) {
   .homepage-gallery {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 340px) {
+  .homepage-gallery {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -420,6 +470,12 @@ p {
     margin-right: 2rem;
   }
 }
+@media (max-width: 300px) {
+  #branding-logo {
+    width: 1rem;
+    margin-right: 1rem;
+  }
+}
 
 .navbar-item, .navbar-item a {
   font-family: "Yipes", "Mitogen Display", sans-serif;
@@ -437,6 +493,12 @@ p {
   .navbar-item, .navbar-item a {
     font-size: 1rem;
     margin-right: 1rem;
+  }
+}
+@media (max-width: 340px) {
+  .navbar-item, .navbar-item a {
+    font-size: 0.75rem;
+    margin-right: 0.75rem;
   }
 }
 
@@ -458,7 +520,7 @@ p {
 }
 @media (max-width: 400px) {
   .branding-name {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-left: 0.5rem;
   }
 }
@@ -473,10 +535,22 @@ p {
     margin-right: 5px;
   }
 }
-@media (max-width: 650px) {
+@media (max-width: 700px) {
   .fa-instagram {
     font-size: 1rem;
     margin-right: 2.5px;
+  }
+}
+@media (max-width: 560px) {
+  .fa-instagram {
+    font-size: 0.75rem;
+    margin-right: 0.75px;
+  }
+}
+@media (max-width: 340px) {
+  .fa-instagram {
+    font-size: 0.5rem;
+    margin-right: 0.5px;
   }
 }
 
@@ -484,27 +558,41 @@ p {
   font-family: "Yipes", "Mitogen Display", sans-serif;
   font-size: 3rem;
   margin-right: 3rem;
+  white-space: nowrap;
 }
 @media (max-width: 1100px) {
   .footer-item {
-    font-size: 2rem;
+    font-size: 1.65rem;
     margin-right: 1.5rem;
   }
 }
-@media (max-width: 650px) {
+@media (max-width: 700px) {
+  .footer-item {
+    font-size: 1.35rem;
+    margin-right: 1rem;
+  }
+}
+@media (max-width: 560px) {
   .footer-item {
     font-size: 0.75rem;
     margin-right: 0.75rem;
+  }
+}
+@media (max-width: 340px) {
+  .footer-item {
+    font-size: 0.5rem;
+    margin-right: 0.25rem;
   }
 }
 
 li.text-ul-item {
   font-size: 2rem;
   margin-right: 2rem;
+  white-space: nowrap;
 }
 @media (max-width: 1100px) {
   li.text-ul-item {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
   }
 }
 @media (max-width: 650px) {

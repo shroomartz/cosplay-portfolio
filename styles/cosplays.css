@@ -9,6 +9,19 @@
   grid-gap: 2rem;
   margin: 0 5rem 0;
 }
+@media (max-width: 1100px) {
+  .cosplay-features {
+    grid-gap: 1.2rem;
+    margin: 0 3rem 0;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 650px) {
+  .cosplay-features {
+    grid-gap: 0.8rem;
+    margin: 0 2rem 0;
+  }
+}
 
 .feature-square {
   display: flex;
@@ -32,6 +45,20 @@
   top: 2.5rem;
   border-radius: 0.75rem;
 }
+@media (max-width: 1100px) {
+  .cosplay-page-link {
+    height: 15rem;
+    width: 15rem;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 650px) {
+  .cosplay-page-link {
+    height: 7.5rem;
+    width: 7.5rem;
+    font-size: 1rem;
+  }
+}
 
 .cosplay-page-link:hover, .cosplay-page-link:focus {
   color: var(--offwhite);
@@ -47,4 +74,45 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 0.75rem;
+}
+@media (max-width: 1100px) {
+  .cosplay-photo {
+    height: 15rem;
+    width: 15rem;
+  }
+}
+@media (max-width: 650px) {
+  .cosplay-photo {
+    height: 7.5rem;
+    width: 7.5rem;
+  }
+}
+
+.cosplay-name {
+  height: 3rem;
+  margin-bottom: auto;
+  white-space: nowrap;
+}
+@media (max-width: 1100px) {
+  .cosplay-name {
+    font-size: 1.5rem;
+    height: 1.5rem;
+  }
+}
+@media (max-width: 650px) {
+  .cosplay-name {
+    font-size: 0.6rem;
+    height: 0.75rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .cosplay-fandom {
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 650px) {
+  .cosplay-fandom {
+    font-size: 0.5rem;
+  }
 }/*# sourceMappingURL=cosplays.css.map */

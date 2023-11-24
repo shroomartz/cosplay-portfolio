@@ -138,10 +138,16 @@ p {
 
     @media (max-width: 1100px) {
         width: 7.5rem;
+        margin-right: 3rem;
     }
 
     @media (max-width: 650px) {
-        width: 5rem;
+        width: 3rem;
+        margin-right: 3rem;
+    }
+    @media (max-width: 400px) {
+        width: 2rem;
+        margin-right: 2rem;
     }
 }
 
@@ -150,6 +156,16 @@ p {
     font-size: 2.25rem;
     list-style: none;
     margin-right: 2rem;
+
+    @media (max-width: 1100px) {
+        font-size: 1.65rem;
+        margin-right: 1.5rem;
+    }
+
+    @media (max-width: 650px) {
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
 }
 
 .branding-name {
@@ -157,17 +173,46 @@ p {
     font-size: 2.5rem;
     margin-left: 1rem;
     margin-right: auto;
+
+    @media (max-width: 1100px) {
+        font-size: 1.5rem;
+    }
+    @media (max-width: 650px) {
+        font-size: 1.25rem;
+    }
+        @media (max-width: 400px) {
+        font-size: 1rem;
+        margin-left: 0.5rem;
+    }
 }
 
 .fa-instagram {
     margin-right: 10px;
     font-size: 2.5rem;
+
+    @media (max-width: 1100px) {
+        font-size: 2rem;
+        margin-right: 5px;
+    }
+    @media (max-width: 650px) {
+        font-size: 1rem;
+        margin-right: 2.5px;
+    }
 }
 
 .footer-item {
     font-family: "Yipes", "Mitogen Display", sans-serif;
     font-size: 3rem;
     margin-right: 3rem;
+
+    @media (max-width: 1100px) {
+        font-size: 2rem;
+        margin-right: 1.5rem;
+    }
+    @media (max-width: 650px) {
+        font-size: 0.75rem;
+        margin-right: 0.75rem;
+    }
 }
 
 li.text-ul-item {

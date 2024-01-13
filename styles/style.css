@@ -157,15 +157,42 @@ h2 {
   font-size: 2.5rem;
   margin-bottom: -0.5rem;
 }
+@media (max-width: 650px) {
+  h2 {
+    font-size: 1rem;
+    margin-bottom: -0.2rem;
+  }
+}
 
 h3 {
   font-size: 1.5rem;
+}
+@media (max-width: 650px) {
+  h3 {
+    font-size: 0.6rem;
+  }
 }
 
 .content {
   margin-left: 10rem;
   position: relative;
   top: 5rem;
+}
+@media (max-width: 1100px) {
+  .content {
+    margin-left: 6rem;
+    top: 2.5rem;
+  }
+}
+@media (max-width: 650px) {
+  .content {
+    margin-left: 4rem;
+  }
+}
+@media (max-width: 400px) {
+  .content {
+    margin-left: 3rem;
+  }
 }
 
 .cosplay-feature-name {
@@ -177,6 +204,12 @@ h3 {
   font-size: 2rem;
   text-align: center;
   margin-top: -1rem;
+}
+@media (max-width: 1100px) {
+  .cosplay-feature-fandom {
+    font-size: 1.2rem;
+    margin-top: -0.6rem;
+  }
 }
 
 .cosplay-feature-punchline {
@@ -205,6 +238,7 @@ h3 {
     height: 12rem;
     margin-left: 4.5rem;
     margin-top: 1.5rem;
+    top: 3rem;
   }
 }
 @media (max-width: 650px) {
@@ -213,6 +247,16 @@ h3 {
     height: 8rem;
     margin-left: 3rem;
     margin-top: 1rem;
+    top: 2rem;
+  }
+}
+@media (max-width: 400px) {
+  .cosplay-feature-photo {
+    width: 5rem;
+    height: 5rem;
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+    top: 1rem;
   }
 }
 
@@ -234,18 +278,35 @@ h3 {
   .cosplay-feature-wallpaper {
     width: 60rem;
     height: 15rem;
+    margin-right: 3rem;
+    border-radius: 1.35rem;
   }
 }
 @media (max-width: 650px) {
   .cosplay-feature-wallpaper {
     width: 40rem;
     height: 10rem;
+    margin-right: 2rem;
+    border-radius: 1.125rem;
+  }
+}
+@media (max-width: 400px) {
+  .cosplay-feature-wallpaper {
+    width: 20rem;
+    height: 5rem;
+    margin-right: 1rem;
+    border-radius: 0.6rem;
   }
 }
 
 .photo-gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 650px) {
+  .photo-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .photo-gallery img {
@@ -257,6 +318,18 @@ h3 {
      object-fit: cover;
   transition: all ease-out 0.2s;
   pointer-events: none;
+}
+@media (max-width: 1100px) {
+  .photo-gallery img {
+    height: 12rem;
+    width: 12rem;
+  }
+}
+@media (max-width: 650px) {
+  .photo-gallery img {
+    height: 8rem;
+    width: 8rem;
+  }
 }
 
 li.text-ul-item {
@@ -272,6 +345,11 @@ li.text-ul-item {
     font-size: 0.75rem;
   }
 }
+@media (max-width: 400px) {
+  li.text-ul-item {
+    font-size: 0.6rem;
+  }
+}
 
 /* .photo-gallery img:hover {
   width: 25rem;
@@ -279,6 +357,52 @@ li.text-ul-item {
   object-fit: cover;
   transition: all ease-in 0.2s;
 } */
+
+input, select, option, textarea {
+  color: black;
+  width: 5rem;
+}
+
+.contact-form-container {
+  background-color: var(--nav-background);
+  width: 100%;
+  border-radius: 5rem;
+}
+
+.contact-me-form button {
+  cursor: pointer;
+  border: var(--periwinkle);
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  font-size: 2rem;
+  border-radius: 2.5rem;
+  background-color: var(--bubblegum);
+  width: 65%;
+}
+
+.contact-me-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+label {
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+.contact-me-form input, select, option {
+  width: 70%;
+  height: 3rem;
+}
+
+textarea {
+  width: 90%;
+  height: 15rem;
+  margin-bottom: 0.5rem;
+}
 
 * {
   font-family: "Beaufort", "DM Sans", "Gill Sans", sans-serif;

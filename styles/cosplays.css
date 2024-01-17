@@ -74,7 +74,7 @@
 }
 
 .cosplay-page-link:hover, .cosplay-page-link:focus {
-  color: var(--offwhite);
+  color: var(--dark-eggplant);
   background-color: var(--bubblegum-hover);
   transition: all 0.5s;
 }

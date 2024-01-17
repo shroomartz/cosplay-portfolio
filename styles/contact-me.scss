@@ -1,6 +1,12 @@
 input, select, option, textarea {
-    color: black;
+    color: var(--dark-eggplant);
+    font-size: 1.5rem;
     width: 5rem;
+    border-radius: 0.75rem;
+}
+
+input, select, option {
+    text-align: center;
 }
 
 .contact-form-container {
@@ -16,8 +22,14 @@ input, select, option, textarea {
     text-decoration: none;
     font-size: 2rem;
     border-radius: 2.5rem;
-    background-color: var(--bubblegum);
+    background-color: var(--fuschia);
     width: 65%;
+}
+
+.contact-me-form button:focus, button:hover {
+    background-color: var(--bubblegum);
+    color: var(--dark-eggplant);
+    transition: all 0.5s;
 }
 
 .contact-me-form {
@@ -26,6 +38,37 @@ input, select, option, textarea {
    align-items: center;
    justify-content: center;
    margin-bottom: 5rem;
+}
+
+.form-input {
+    position: relative;
+}
+
+.form-input.success input {
+    border: 0.5rem var(--success-green);
+}
+
+.form-input.error input {
+    border: 0.5rem var(--error-red);
+}
+
+.form-submission-message {
+    color: var(--success-green);
+    display: none;
+}
+
+.error-message {
+    color: var(--error-red);
+    visibility: hidden;
+}
+
+.form-input.error span {
+    visibility: visible;
+}
+
+.error-message:last-of-type {
+    margin-bottom: 0.5rem;
+    color: var(--success-green);
 }
 
 label {

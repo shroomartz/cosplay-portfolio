@@ -3,7 +3,7 @@
   /* Colors */
   --offwhite: #f5f5f5;
   --bubblegum: #fd4779;
-  --bubblegum-hover: rgb(253, 71, 121, 0.8);
+  --bubblegum-hover: rgb(253, 71, 121, 0.92);
   --neonpurple: #9c21c3;
   --fuschia: #a82256;
   --burgundy: #a8256d;
@@ -13,6 +13,8 @@
   --dark-eggplant: #0d0022;
   --nav-background: rgba(101, 80, 160, 0.15);
   --periwinkle: #839bf2;
+  --success-green: #81EDB7;
+  --error-red: #FD3E3C;
 }
 
 .punchline {
@@ -91,7 +93,7 @@
 }
 
 .cosplay-page-link:hover, .cosplay-page-link:focus {
-  color: var(--offwhite);
+  color: var(--dark-eggplant);
   background-color: var(--bubblegum-hover);
   transition: all 0.5s;
 }
@@ -359,8 +361,14 @@ li.text-ul-item {
 } */
 
 input, select, option, textarea {
-  color: black;
+  color: var(--dark-eggplant);
+  font-size: 1.5rem;
   width: 5rem;
+  border-radius: 0.75rem;
+}
+
+input, select, option {
+  text-align: center;
 }
 
 .contact-form-container {
@@ -376,8 +384,14 @@ input, select, option, textarea {
   text-decoration: none;
   font-size: 2rem;
   border-radius: 2.5rem;
-  background-color: var(--bubblegum);
+  background-color: var(--fuschia);
   width: 65%;
+}
+
+.contact-me-form button:focus, button:hover {
+  background-color: var(--bubblegum);
+  color: var(--dark-eggplant);
+  transition: all 0.5s;
 }
 
 .contact-me-form {
@@ -386,6 +400,37 @@ input, select, option, textarea {
   align-items: center;
   justify-content: center;
   margin-bottom: 5rem;
+}
+
+.form-input {
+  position: relative;
+}
+
+.form-input.success input {
+  border: 0.5rem var(--success-green);
+}
+
+.form-input.error input {
+  border: 0.5rem var(--error-red);
+}
+
+.form-submission-message {
+  color: var(--success-green);
+  display: none;
+}
+
+.error-message {
+  color: var(--error-red);
+  visibility: hidden;
+}
+
+.form-input.error span {
+  visibility: visible;
+}
+
+.error-message:last-of-type {
+  margin-bottom: 0.5rem;
+  color: var(--success-green);
 }
 
 label {

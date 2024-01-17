@@ -25,27 +25,34 @@
   <body>
     <h1>Contact Me</h1>
     <p class="punchline">Contact me for collabs, photoshoots, convention invitations, and more!</p>
-    <div class="contact-form-container">
-      <form class="contact-me-form">
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name"></input>
-        <label for="instaHandle">Instagram:</label>
-        <input type="text" name="instaHandle" id="instaHandle"></input>
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email"></input>
-        <label for="inquiry">Your Type of Inquiry:</label>
-        <select id="inquiry" name="inquiry">
+    <section class="contact-form-container">
+      <form action="" id="contact-me-form" class="contact-me-form">
+        <p>All fields with an aesterik (*) next to them are required.</p>
+        <p class="form-submission-message">Your message has been sent to Teemo. Thank you!</p>
+        <label for="name">Name*</label>
+        <input type="text" name="name" id="name" class="form-input" required></input>
+        <span class="error-message">sadsad</span>
+        <label for="instaHandle">Instagram</label>
+        <input type="text" name="instaHandle" id="instaHandle" class="form-input"></input>
+        <span class="error-message">sadad</span>
+        <label for="email">Email*</label>
+        <input type="email" name="email" id="email" class="form-input" required></input>
+        <span class="error-message">asdad</span>
+        <label for="inquiry">Your Type of Inquiry*</label>
+        <select name="inquiry" id="inquiry" class="form-input" required>
+          <option value="general-inquiry">General Inquiry</option>
           <option value="cosplay-collab">Cosplay Collab</option>
           <option value="photoshoot">Photoshoot</option>
           <option value="convention-invite">Convention Invitation</option>
-          <option value="other-inquiry">Other Inquiry</option>
         </select>
-        <label for="message">Your Message:</label>
-        <textarea type="text" name="message" id="message"></textarea>
-        <button class="submit">Submit & Send Your Message</button>
+        <label for="message">Your Message*</label>
+        <textarea type="text" name="message" id="message" class="form-input" required></textarea>
+        <span class="error-message">Text</span>
+        <button type="submit" class="submit">Submit & Send Your Message</button>
       </form>
-    </div>
+    </section>
     <script src="/scripts/app.js" async defer></script>
+    <script src="/scripts/contact-me.js" async defer></script>
   </body>
   <footer>
     <span class="branding-name">shroomartz</span>
